@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ВывескиПро — Изготовление и установка вывесок</title>
+  <style>
+    /* Общие стили */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f);
+      color: white;
+      padding: 2rem 5%;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 1rem;
+    }
+
+    nav li {
+      margin: 0 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a2a6c;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #b21f1f;
+    }
+
+    section {
+      padding: 4rem 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 2.2rem;
+      color: #1a2a6c;
+    }
+
+    /* Преимущества */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.8rem;
+      width: 30%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .feature-card h3 {
+      margin: 1rem 0;
+      color: #b21f1f;
+    }
+
+    /* Портфолио */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .portfolio-item {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .portfolio-item p {
+      padding: 1rem;
+      background: white;
+      text-align: center;
+    }
+
+    /* Контакты */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.8rem 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    .contact-form button {
+      background: #b21f1f;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #9a1a1a;
+    }
+
+    footer {
+      background: #1a2a6c;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav li {
+        margin: 0.5rem 0;
+      }
+
+      .feature-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ВывескиПро</h1>
+    <p>Изготовление и установка вывесок под ключ — быстро, качественно, недорого!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#portfolio">Портфолио</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">О компании</h2>
+    <p>Мы — команда профессионалов с 10-летним опытом в сфере наружной рекламы. Изготавливаем вывески любого типа: неоновые, объёмные, световые короба, лайтбоксы, информационные таблички и многое другое. Работаем по всей России и гарантируем качество, соблюдение сроков и индивидуальный подход к каждому клиенту.</p>
+  </section>
+
+  <section id="services">
+    <h2 class="section-title">Наши услуги</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Изготовление</h3>
+        <p>Из любых материалов: пластик, металл, дерево, акрил, LED-ленты.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Монтаж</h3>
+        <p>Профессиональная установка вывесок на фасады и внутри помещений.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Дизайн</h3>
+        <p>Бесплатная разработка макета с учётом ваших пожеланий и бренда.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2 class="section-title">Портфолио</h2>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x200/1a2a6c/ffffff?text=Кафе+«Лето»" alt="Вывеска для кафе">
+        <p>Световой короб для кафе «Лето»</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x200/b21f1f/ffffff?text=Магазин+обуви" alt="Вывеска для магазина">
+        <p>Объёмные буквы для магазина обуви</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x200/2c3e50/ffffff?text=Автосервис" alt="Вывеска для автосервиса">
+        <p>Неоновая вывеска для автосервиса</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Свяжитесь с нами</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="tel" placeholder="Телефон" required>
+      <input type="email" placeholder="Email (необязательно)">
+      <textarea placeholder="Опишите задачу: тип вывески, размеры, сроки..." rows="4"></textarea>
+      <button type="submit">Отправить заявку</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 ВывескиПро. Все права защищены.</p>
+    <p>Телефон: +7 (495) 123-45-67 | Email: info@viveskipro.ru</p>
+    <p> Developed By <a href="https://github.com/NLP0" style="color: #81C408; text-decoration: none;">N-LP0</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Спасибо за заявку! Мы свяжемся с вами в ближайшее время.');
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
